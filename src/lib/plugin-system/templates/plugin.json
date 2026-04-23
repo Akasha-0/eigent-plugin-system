@@ -1,0 +1,13 @@
+{
+  "id": "eigent-sample-plugin",
+  "name": "Sample Plugin",
+  "version": "1.0.0",
+  "description": "Exemplo de plugin para o Eigent",
+  "author": "Seu Nome",
+  "homepage": "https://seusite.com",
+  "license": "MIT",
+  "capabilities": ["agent"],
+  "dependencies": {},
+  "entry": "dist/index.js",
+  "permissions": ["network"]
+}
