@@ -12,6 +12,9 @@ import json
 import time
 
 app = FastAPI(
+    docs_url="/docs",
+    redoc_url="/redoc",
+    openapi_url="/openapi.json",
     title="Eigent Sync API",
     description="Cloud sync service for Eigent",
     version="1.0.0",

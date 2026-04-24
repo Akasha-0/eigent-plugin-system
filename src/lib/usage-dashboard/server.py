@@ -9,7 +9,10 @@ from datetime import datetime, timedelta
 from enum import Enum
 import uuid
 
-app = FastAPI(title="Eigent Usage API", version="1.0.0")
+app = FastAPI(
+    docs_url="/docs",
+    redoc_url="/redoc",
+    openapi_url="/openapi.json",title="Eigent Usage API", version="1.0.0")
 
 # ===== Models =====
 

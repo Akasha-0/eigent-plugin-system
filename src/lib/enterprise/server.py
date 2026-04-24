@@ -10,7 +10,10 @@ from enum import Enum
 import jwt
 import uuid
 
-app = FastAPI(title="Eigent Enterprise API", version="1.0.0")
+app = FastAPI(
+    docs_url="/docs",
+    redoc_url="/redoc",
+    openapi_url="/openapi.json",title="Eigent Enterprise API", version="1.0.0")
 
 class UserRole(str, Enum):
     ADMIN = "admin"

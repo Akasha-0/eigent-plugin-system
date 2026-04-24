@@ -4,6 +4,7 @@ Eigent REST API - FastAPI Backend
 
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.openapi.utils import get_openapi
 from pydantic import BaseModel, Field
 from typing import Optional, List, Dict, Any
 from datetime import datetime
@@ -13,6 +14,9 @@ app = FastAPI(
     title="Eigent API",
     description="REST API for Eigent Desktop Cowork AI Agent",
     version="1.0.0",
+    docs_url="/docs",
+    redoc_url="/redoc",
+    openapi_url="/openapi.json",
 )
 
 # CORS

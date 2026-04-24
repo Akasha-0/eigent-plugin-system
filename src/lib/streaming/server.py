@@ -11,6 +11,9 @@ from pydantic import BaseModel, Field
 from datetime import datetime
 
 app = FastAPI(
+    docs_url="/docs",
+    redoc_url="/redoc",
+    openapi_url="/openapi.json",
     title="Eigent Streaming API",
     description="Streaming responses for Eigent agents",
     version="1.0.0",

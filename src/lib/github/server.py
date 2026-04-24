@@ -9,6 +9,9 @@ from datetime import datetime
 import aiohttp
 
 app = FastAPI(
+    docs_url="/docs",
+    redoc_url="/redoc",
+    openapi_url="/openapi.json",
     title="Eigent GitHub API",
     description="GitHub integration for Eigent",
     version="1.0.0",

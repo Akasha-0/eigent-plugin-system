@@ -9,6 +9,9 @@ from datetime import datetime
 from enum import Enum
 
 app = FastAPI(
+    docs_url="/docs",
+    redoc_url="/redoc",
+    openapi_url="/openapi.json",
     title="Eigent Marketplace API",
     description="API for Agent Marketplace operations",
     version="1.0.0",

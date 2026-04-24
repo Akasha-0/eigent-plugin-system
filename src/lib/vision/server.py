@@ -14,6 +14,9 @@ from datetime import datetime
 import uuid
 
 app = FastAPI(
+    docs_url="/docs",
+    redoc_url="/redoc",
+    openapi_url="/openapi.json",
     title="Eigent Vision API",
     description="Vision and OCR capabilities",
     version="1.0.0",
